@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temafinal.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/alvart.jpg','imagenes/upaep.jpg','imagenes/buap1.jpg','imagenes/unitec.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Carreras universitarias </h1>
+   </div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:auto;height:190px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>
+    Ingenieria en sistemas computacionales</h2>
+    <p>Se muestran universidades</p>
+     </a>
+    </li>
+<li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Ingenierias en mecatronica</h2>
+     <p>Se muestran universidades</p>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Licenciatura en Diseño Gráfico</h2>
+    <p>Se muestran universidades</p>
+    </a>
+   </li>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+      <img src="res/android/mdpi.png" width="46" height="46">
+  </div>
+   <div>
+      <h4>Aplicacion Final</h4>
+      <h4>Miguel Angel Cardoso Hernandez</h4>
+   </div>
+</div>
+</div> 
+</div> </div> </div> 
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Universidades</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+         <p>La ingeniería en sistemas computacionales es un modo de enfoque interdisciplinario que permite estudiar y comprender la realidad, con el propósito de implementar u optimizar sistemas informáticos complejos. Puede verse como la aplicación tecnológica de la teoría de sistemas a los esfuerzos de la ingeniería, adoptando en todo este trabajo el paradigma sistémico. La ingeniería en sistemas integra otras disciplinas y grupos de especialidad en un esfuerzo de equipo formando un proceso de desarrollo estructurado.<p>
+         <h3>Universidades que me ofrecen esta carrera </h3>
+          <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Universidad Alvart</h1>
+       <div>
+       <center>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/alvart.jpg',1)"><img src="imagenes/alvart.png" width="247" height="204" id="Image4"></a>
+       </center>
+<h2>PLAN DE ESTUDIOS </h2>
+
+<br>
+
+<h4>CARRERAS</h4>
+<ul>
+ 	<li>Licenciatura en Derecho	 </li>
+    <li>Licenciatura en Psicología	 </li>
+ 	<li>Licenciatura en Diseño Gráfico	 </li>
+ 	<li>Lenguas Modernas Aplicadas	 </li>
+ 	<li>Licenciatura en Turismo	 </li>
+ 	<li style="color:#F00">Ingenieria en Sistemas Computacionales	 </li>
+ 	 	</ul><br> 
+<h4>DIRECCIÓN</h4><br>
+ 5 poniente número 708 Col. Centro, Puebla, Pue.
+<br><br> <br>
+<h4>TELÉFONOS</h4><br>
+                             01 (222) 242 36 64
+<br><br><br>
+<h4>CORREO ELECTRÓNICO Y PAGINA DE INTERNET</h4><br>
+
+Esta dirección de correo electrónico está protegida contra spambots. Usted necesita tener Javascript activado para poder verla.">institutoalvart@hotmail.com
+
+www.institutoalvart.com
+                           <br><br>
+         <a href="http://www.institutoalvart.com/licenciatura_en_sistemas_estudiar_ingenieria_en_sistemas.html">Da click aqui para ver mas informacion</a>
+         </div>
+      </div>
+      </div>
+    <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/upaep.jpg',1)"><img src="imagenes/upaep2.jpg" width="273" height="185" id="Image5"></a>
+<h1>Universidad UPAEP</h1>
+       <div>
+    <h2>PLAN DE ESTUDIOS </h2>
+<p>Nuestros planes de estudio están diseñados para formar profesionistas de excelencia académica comprometidos con la sociedad. Es a través del conjunto de conocimientos prácticos y teóricos, como desarrollarás las aptitudes necesarias para abrirte las puertas al mercado laboral.</p>
+<br>
+<h4>TELÉFONOS</h4><br>
++52 (222) 229 94 00 
+<br><br><br>
+<h4>CORREO ELECTRÓNICO Y PAGINA DE INTERNET</h4><br>
+   admisiones@upaep.mx
+                           <br><br>
+         <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=207&Itemid=167.html">Da click aqui para ver mas informacion</a>
+         </div>
+      </div>
+      </div>
+   </div>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/2eYjhCSNh6M" frameborder="0" allowfullscreen></iframe>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicacion Final, MACH</h4>
+      </div>
+   </div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Universidades</h1>
+   </div>
+   <div data-role="content" align="center">
+      <p>La ingeniería mecatrónica es una disciplina que une la ingeniería mecánica, ingeniería electrónica, ingeniería de control e ingeniería informática, y sirve para diseñar y desarrollar productos que involucren sistemas de control para el diseño de productos o procesos inteligentes, lo cual busca crear maquinaria más compleja para facilitar las actividades del ser humano a través de procesos electrónicos en la industria mecánica, principalmente. Debido a que combina varias ingenierías en una sola, su punto fuerte es la versatilidad.</p>
+        <h3>Universidades que me ofrecen esta carrera </h3>
+          <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Universidad UTP</h1>
+       <div>
+    <h2>PLAN DE ESTUDIOS </h2>
+    <img src="imagenes/titulo.jpg" width="407" height="248">
+    <br>
+<img src="imagenes/perfi1l.jpg" width="406" height="480"><br>
+         <a href="http://www.utpuebla.edu.mx/divisiones/mecatronica/mecatronica/index.html">Da click aqui para ver mas informacion</a>
+         </div>
+      </div>
+      </div>
+    <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Universidad BUAP</h1>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/buap1.jpg',1)"><img src="imagenes/buap.jpg" width="256" height="192" id="Image6"></a>
+<h2>Perfil de Ingreso</h2>
+<p>El aspirante a la Licenciatura en Ingeniería Mecatrónica deberá tener los siguientes atributos:
+Conocimientos básicos en el área de Ciencias Naturales y Exactas, así como  de redacción de textos. Habilidades de análisis, síntesis y autoaprendizaje. Disposición para comunicarse en un idioma extranjero, uso adecuado de los medios de información y comunicación, trabajo individual y en equipo. Interés por aplicar  la tecnología y los métodos de investigación. Búsqueda de la superación y mejora personal a partir de sus propias fortalezas y debilidades. Participación en las transformaciones de su contexto.</p>
+<br><br><br>
+<h4>CORREO ELECTRÓNICO Y PAGINA DE INTERNET</h4><br>
+  <p>www.ece.buap.mx<br>
+www.mecatronica.ece.buap.mx</p>
+                           <br><br>
+         <a href="http://cmas.siu.buap.mx/portal_pprd/wb/EDUCATIVA/ingenieria_en_mecatronica_1">Da click aqui para ver mas informacion</a>
+         </div>
+      </div>
+      </div>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/uhgTgSHJXU8" frameborder="0" allowfullscreen></iframe>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicacion Final, MACH</h4>
+      </div>
+   </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Univerisdades</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+      <p>El diseño gráfico es una profesión cuya actividad consiste en concebir, organizar, proyectar y realizar comunicaciones visuales, producidas en general por medios industriales y destinadas a transmitir mensajes específicos a grupos sociales y con objetivos claros y determinados. Esta actividad posibilita comunicar gráficamente ideas, hechos y valores procesados y sintetizados en términos de forma y comunicación, factores sociales, culturales, económicos, estéticos y tecnológicos. También se conoce con el nombre de diseño en comunicación visual, debido a que algunos asocian la palabra gráfico únicamente a la industria gráfica, y entienden que los mensajes visuales se canalizan a través de muchos medios de comunicación, y no solo los impresos.
+      </p>
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Universidad UNITEC</h1>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/unitec.jpg',1)"><img src="imagenes/unitec1.jpg" width="225" height="225" id="Image7"></a>
+<h2>PLAN DE ESTUDIOS </h2>
+<p>Nuestros planes de estudio están diseñados para formar profesionistas de excelencia académica comprometidos con la sociedad. Es a través del conjunto de conocimientos prácticos y teóricos, como desarrollarás las aptitudes necesarias para abrirte las puertas al mercado laboral.</p>
+    <br>
+<h4>TELÉFONOS</h4><br>
+01 800 7 864 832 
+<br><br><br>
+<h4>CORREO ELECTRÓNICO Y PAGINA DE INTERNET</h4><br>
+   admisiones@unitec.mx
+                           <br><br>
+         <a href="http://www.unitec.mx/licenciatura-en-diseno-grafico/">Da click aqui para ver mas informacion</a>
+      </div>
+         </div>
+      </div>
+      </div>
+           <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Universidad UPAEP</h1>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/upaep.jpg',1)"><img src="imagenes/upaep2.jpg" width="273" height="185" id="Image8"></a>
+<h2>PLAN DE ESTUDIOS </h2>
+<p>Nuestros planes de estudio están diseñados para formar profesionistas de excelencia académica comprometidos con la sociedad. Es a través del conjunto de conocimientos prácticos y teóricos, como desarrollarás las aptitudes necesarias para abrirte las puertas al mercado laboral.</p>
+    <br>
+<h4>TELÉFONOS</h4><br>
++52 (222) 229 94 00 
+<br><br><br>
+<h4>CORREO ELECTRÓNICO Y PAGINA DE INTERNET</h4><br>
+   admisiones@upaep.mx
+                           <br><br>
+         <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=147&Itemid=167">Da click aqui para ver mas informacion</a>
+      </div>
+         </div>
+      </div>
+      </div>
+     <center> <iframe width="360" height="215" src="https://www.youtube.com/embed/Q6qftXv5y-U" frameborder="0" allowfullscreen></iframe>
+      </center><div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicacion Final, MACH</h4>
+      </div>
+   </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
